@@ -12,7 +12,7 @@ class Main extends Component {
         dishes:DISHES,
         selectedDish:null,
     };
-    console.log(this.state.dishes[0].comments);
+    
 }
 onDishSelect(dishId){
     this.setState({selectedDish:dishId})
@@ -27,7 +27,13 @@ onDishSelect(dishId){
         </Navbar>
         <Menu dishes={this.state.dishes}
             onClick={(dishId)=>this.onDishSelect(dishId)} />
-        <Dishdetail dish ={this.state.dishes.filter((dish)=>dish.id === this.state.selectedDish) [0]}/>
+        <Dishdetail 
+        dish =
+        {
+            this.state.dishes.filter((dish)=>dish.id === this.state.selectedDish)[0]
+           
+        }
+            />
       </div>
     );
   }
