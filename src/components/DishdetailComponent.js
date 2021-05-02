@@ -18,7 +18,6 @@ import {Link} from 'react-router-dom';
         }
 
     function RenderDishComment({comments}){
-        // console.log(comments);
         if(comments != null)
             return(
                 <div className="col-12 col-md-5 m-1">
